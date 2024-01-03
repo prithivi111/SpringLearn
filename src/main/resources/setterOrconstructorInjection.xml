@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+	<bean id="Tyre" class="com.practice.setterOrconstructorInjection.Tyre">
+		<!-- <property name="brand"	value="MRF"></property>  --> <!-- This is setter injection of variable. -->
+		<constructor-arg value ="MRF"></constructor-arg>
+		
+	</bean>
+</beans>
