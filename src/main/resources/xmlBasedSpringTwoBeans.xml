@@ -7,9 +7,16 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <context:component-scan base-package="com.practice.annotationBasedSpring"></context:component-scan>
-
-
+ 
+	 <bean id="part" class="com.practice.xmlBasedSpringTwoBeans.Part"> 	
+  		<property name="rearViewName" value="GoodMirror"></property>
+  		<property name="nullVotName" value="GoodNullVot"></property>
+    </bean>
+		
+   	<bean id="Bike" class="com.practice.xmlBasedSpringTwoBeans.Bike"> 	
+  		<property name="gear" value="auto"></property>
+  		<property name="parts" ref="part"></property>   <!-- //This ref is very important here -->
+    </bean>
+	
 
 </beans>

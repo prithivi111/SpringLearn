@@ -4,9 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
    
-    <bean id="vehicle" class="com.practice.xml.Car">
-  
+    <bean id="vehicle" class="com.practice.xmlBasedSpring.Car">
+    	
+    	<property name="seats" value="4"></property>
+		<property name="gear" value="auto"></property> 
+		
+		<!-- <constructor-arg value="4"/>
+		<constructor-arg value="auto"/> -->
+			
     </bean>
 
 </beans>
